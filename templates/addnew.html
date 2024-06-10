@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/add" method="post">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Position</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Position">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Office</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Office">
+      </div>
+    
+      <input type="submit" value="submit" class="btn btn-primary mb-3">    
+</form>
+{% endblock content %}
